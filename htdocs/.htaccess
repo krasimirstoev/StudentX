@@ -1,0 +1,21 @@
+AddDefaultCharset UTF-8
+AddCharset UTF-8 .utf8
+
+
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /
+RewriteCond    %{REQUEST_FILENAME}  -d
+RewriteCond    %{REQUEST_URI}  (.*)
+RewriteRule    (.+)[^/]           %1/  [R=301,L]
+
+RewriteRule ^([^/\.]+)/([^/\.]+)/([^/\.]+)/([0-9]+)/?$ index.php?Class=$1&Function=$2&id=$3&$page=$4 [QSA,L]
+RewriteRule ^([^/\.]+)/([^/\.]+)/([^/\.]+)/?$ index.php?Class=$1&Function=$2&id=$3 [QSA,L]
+RewriteRule ^([^/\.]+)/([^/\.]+)/?$ index.php?Class=$1&Function=$2 [QSA,L]
+RewriteRule ^([^/\.]+)/?$ index.php?Class=$1 [QSA,L]
+
+
+
+ErrorDocument 404 http://studentx.org/Pages/Error404
+</IfModule>
+

@@ -1,0 +1,14 @@
+This is my school project for NOIT '09.
+This project it's not something awesome, using cut-edge technologies or something,
+but I'm still proud of it, since I've wrote this more than two years ago, for less than a week,
+without using any framework, but implementing my own MVC structure.
+
+Since StudentX is no longer online, I decided to put it's source here. Krasimir Stoev was involved in development of this, too(mostly criticism and muttering, but still invloved :)
+And by the way, sorry for those many comments in the source, but that was a requirement from the jury.
+
+This project is licensed under GNU General Public License v2 and it's using the open source template Lazydays(I've never been godd in designing)
+and the asido library for manipulating images.
+
+Have fun.
+Kiril Vladimiroff
+v.kiril@gmail.com

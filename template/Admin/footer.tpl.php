@@ -1,0 +1,1 @@
+<?php include(TEMPLATE."footer.tpl.php"); ?>

@@ -1,0 +1,91 @@
+/* 
+
+	template:  studentX.net
+	version: 0.2.1
+	Author: Krasimir Stoev
+	URL: http://eagle.mountain-world.org/blog
+	e-mail: eagle@kamenitza.org
+
+   
+*/
+
+
+body {
+
+background-image:url('imgs/test.jpg');
+font: 1em "Lucida Grande", Lucida, Verdana, sans-serif;
+margin: 80px 40px 40px;
+width: 70%;
+}
+
+
+
+/* links */
+a, a:visited {	
+	color: #b8dfff;
+	text-decoration: none;
+}
+a:hover {
+	color: #b8dfff;
+	text-decoration: underline;
+}
+
+
+/* Normal Bubble */
+div.bubble {
+	width: auto;
+	font-size: 0.75em;
+	margin-bottom: 24px;
+}
+
+div.bubble blockquote {
+	margin: 0px;
+	padding: 0px;
+	border: 1px solid #c9c2c1;
+	background-color: #fff;
+}
+
+div.bubble blockquote p {
+	margin: 10px;
+	padding: 0px;
+}
+
+
+/* Rounded Bubble */
+div.bubble div.rounded {
+	margin-bottom: 10px;
+	border: 3px solid #fff;
+	background-color: #b7e0ff;
+}
+div.bubble div.rounded blockquote {
+	border: 0;
+	background-color: transparent;
+}
+div.bubble div.rounded blockquote p {
+	margin: 0px 10px;
+}
+div.bubble cite.rounded {
+	position: relative;
+	margin: 0px;
+	padding-left: 15px;
+	padding-top: 12px;
+	top: 9px;
+	background: transparent url('imgs/bbl_rounded.gif') no-repeat 15px 0;
+}
+
+/* Pimped Bubble */
+div#pimped.bubble {
+	font-size: 0.9em;
+}
+div#pimped.bubble div.rounded {
+	color: #fff;
+	border: 3px solid #fff;
+	background-color: #111;
+}
+div#pimped.bubble cite.rounded {
+	background: transparent url(tip-pimped.gif) no-repeat 15px 0;
+}
+
+
+
+

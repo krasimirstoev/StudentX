@@ -1,0 +1,722 @@
+html {
+  height: 100%;
+}
+
+body {
+
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+
+  font: 400 0.8em verdana, sans-serif;
+  line-height: 170%;
+
+  background: #666 url(../images/bg/header.jpg) repeat-x top left;
+  color: #EEE;
+}
+
+h1 {   
+  clear: both;
+  font: 700 2.5em "verdana", sans-serif;
+  color: #FFF;
+}
+
+h1 a {
+  color: #FFF;
+  text-decoration: none;
+}
+h1 a:hover {
+  color: #FFF;
+}
+
+h2 {
+  font: 400 1.5em "verdana", sans-serif;
+  color: #FFF;
+}
+
+h2 a {
+  color: #29E3FF;
+}
+
+h2 a:hover {
+  color: #FFF;
+}
+
+h3 {
+  font: 400 1.3em "verdana", sans-serif;
+  color: #F8D766;
+}
+
+h4 {
+  font: 700 1.2em "verdana", sans-serif;
+  color: #F39F01;
+}
+
+h5 {
+  font: 700 1.1em "verdana", sans-serif;
+  color: #F17400;
+}
+
+h6 {
+  font: 700 1em "verdana", sans-serif;
+  color: #FF4B33;
+}
+
+
+h1, h2, h3, h4, h5, h6, p, dl, table, strong, а {
+  margin: 0;
+  padding: 10px 15px;
+}
+
+p {
+  color: #FFF;
+  line-height: 32pt;
+}
+
+p strong {
+  color: #F48D00;
+}
+
+table {
+  width: 100%;
+  border: 0;
+}
+
+th {
+  color: #F6CE52;
+}
+
+.title {
+  font: 400 1.3em "verdana", serif;
+  color: #F8D766;
+  text-decoration: none;
+}
+
+
+/* Done so the leftmost column aligns properly with the header.
+   If the leftmost column has class gradient applied to it, 
+   this class isn't required. */
+.leftColumn h1,
+.leftColumn h2, 
+.leftColumn h3,
+.leftColumn h4,
+.leftColumn h5,
+.leftColumn h6,
+.leftColumn p,
+.leftColumn dl {
+  padding-left: 0;
+}
+
+a {
+  color: #65EBFF;
+}
+
+/* Uncomment this if you would like a visited link style 
+a:visited {
+  text-decoration: line-through;
+} */
+
+a:hover {
+  color: #CEFEFF;
+}
+
+b {
+  color: #FFF;
+}
+
+ol, ul {
+  margin: 10px 30px;
+  padding: 0 30px;
+}
+
+ol {
+  color: #FC0;
+}
+
+ol span {
+  color: #EEE;
+}
+
+ul {
+  list-style-type: none;
+}
+
+label:hover{
+  font-weight: bold;
+  cursor: pointer;
+}
+
+del {
+  color: #AAA;
+}
+
+code {
+  margin: 10px 15px;
+  padding: 10px;
+  display: block;
+  overflow: auto;
+  
+  font: 400 1em courier, monospace;
+  line-height: 120%;
+  white-space: pre;
+  
+  background: #444;
+}
+
+.leftColumn code {
+  margin-left: 5px;
+}
+
+acronym {
+  cursor: help;
+  border-bottom: 1px solid #777;
+}
+
+dt {
+  font-weight: bold;
+  color: #FFB323;
+}
+
+dd {
+  margin-left: 0;
+  padding-left: 45px; 
+}
+
+
+
+
+
+/**************************************************************
+   Form Elements
+ **************************************************************/
+
+input[type="file"],
+input[type="image"],
+input[type="password"],
+input[type="reset"],
+input[type="submit"],
+input[type="text"],
+textarea,
+select {
+  padding: 2px;
+  font: 400 1.3em "verdana", serif;
+  color: #444;
+  background: #EEE;
+  border: 1px solid #444;
+  width: 620px;
+ }
+ 
+.question{
+  width: 300px;
+ }
+
+input:focus,
+input:hover,
+textarea:focus,
+textarea:hover,
+select:focus,
+select:hover {
+  color: #000;
+  background: #E4F7FA;
+  border: 1px solid #00DFFF;
+}
+
+input[type="submit"] {
+  margin-top: 10px;
+  margin-left: 1px;
+  width: 220px;
+  color: #555;
+  background: #9FF3FF;
+  border-color: #FFF #00DFFF #00DFFF #FFF;
+}
+
+input[type="submit"]:active {
+  color: #000;
+  background: #E4F7FA;
+  border: 1px solid #00DFFF;
+}
+
+input[type="hidden"] {
+  visibility: hidden;
+}
+
+
+
+
+
+/**************************************************************
+   Blockquote and included icons
+ **************************************************************/
+
+blockquote {
+  margin: 10px 15px;
+  padding-left: 27px;
+  padding-bottom: 8px;
+  
+  background-color: #444;  
+  background-image: url(../images/icons/quote.gif);
+  background-repeat: no-repeat;
+  background-position: 5px 50%;  
+}
+
+blockquote.exclamation {
+  background-image: url(../images/icons/exclamation.gif);
+}
+
+blockquote.stop {
+  background-image: url(../images/icons/stop.gif);
+}
+
+blockquote.go {
+  background-image: url(../images/icons/go.gif);
+}
+
+
+
+
+
+/**************************************************************
+   Images
+ **************************************************************/
+
+img.floatRight {
+  margin: 5px 0px 10px 15px;  
+}
+
+img.floatLeft {
+  margin: 5px 15px 10px 0px;
+}
+
+a img {  
+  border: 2px solid #8BE6FA;
+}
+
+a:hover img {  
+  /* Fixes IE bug - IE doesn't correctly apply the style on a:hover so need to mask it */
+  border: 2px solid #FFF !important;
+  border: 2px solid #8BE6FA;
+}
+
+/**************************************************************
+    Span Styles
+**************************************************************/
+.list {
+  font-weight: bold;
+  border: 0;
+}
+
+.list:hover {
+  background: #707070;
+  color: #00F0EC;
+  cursor: pointer;
+}
+
+/************************************************************
+   Profile links
+*************************************************************/
+
+.profileLink {
+  margin-left: 8px;
+  text-decoration: none;
+  color:  #65EBFF;
+  background: #707070;
+  padding: 8px;
+  font-weight: bold;
+}
+.profileLink1 {
+  font-weight: bold;
+  margin-left: 8px;
+  padding: 8px;
+  text-decoration: none;
+  color:  #fFF;
+  background: #707070;
+  border-bottom: 5px solid;
+  border-color: #FBCB50;
+}
+
+/**************************************************************
+   #content: Sets the width of the site.  Make changes here
+             to convert to a fixed width site.
+ **************************************************************/
+
+#content {  
+  height: 100%;
+  min-width: 1000px;
+  min-height: 100%;
+
+  text-align: left;
+}
+
+#content,
+#width {
+  /* max-width hack for IE since it doesn't understand the valid css property */
+  /*width: 100%;  */
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+#content[id],
+#width[id] {
+  width: auto;
+  height: auto;
+}
+
+
+
+
+/**************************************************************
+   #header: Holds the site title and header images
+ **************************************************************/
+
+#header {
+  /*position: relative;*/
+  height: 193px;
+}
+
+/* Holds the site title and subtitle */
+#header #title {
+  position: absolute;
+  z-index: 3;
+  top: 10px;
+  left: 120px;
+
+  padding: 5px;
+  text-align: right;
+}
+
+#header h1 {
+  margin: 0;
+  padding: 0;
+  font: 700 6em "verdana", serif;
+  letter-spacing: -3px;
+  /*text-transform: lowercase;*/
+  color: #FFF;
+  padding-left: 200px;
+  padding-top: 50px;
+}
+
+#header h2 {
+  position: absolute;
+  top: 10px;
+  right: 35px;
+  margin: 0;
+  padding: 0;
+  padding-top: 45px;
+  font: 700 1.4em "verdana", serif;
+  text-transform: lowercase;
+  color: #00F0EC;
+}
+
+
+/* Sets where the header images will go */
+#header img.left {
+  position: absolute;
+  z-index: 1;
+
+  top: 0;
+  left: 0;
+  margin-left: 0px;
+  padding-left: 0px;
+}
+
+#header img.right {
+  position: absolute;
+  z-index: 0;
+
+  top: 0;
+  right: 0;
+}
+
+#header img.balloons {
+  position: absolute;
+  z-index: 2;
+
+  top: 70px;
+  right: 400px;
+}
+
+
+
+/**************************************************************
+   #mainMenu: The top level site menu
+ **************************************************************/
+
+#mainMenu { 
+  float: left;
+  width: 100%;
+  clear: both;  
+}
+
+#mainMenu ul {
+  margin: 0;
+  padding: 0;
+}
+
+#mainMenu li {
+  display: inline;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#mainMenu li a {
+  float: left;
+  margin: 0 2px;
+  padding: 5px 0.5em;
+
+  font: 400 1.4em "verdana", serif;
+  text-decoration: none;
+  /*text-transform: lowercase;/*/
+  color: #65EBFF;
+}
+
+#mainMenu li a:hover,
+#mainMenu li a.here {
+  color: #CEFEFF;
+  border-top: 5px solid #000;
+}
+
+#mainMenu li a.last {
+  margin-right: 0;
+}
+
+
+
+
+/**************************************************************
+   .sideMenu: The side bar menu
+ **************************************************************/
+
+ul.sideMenu {
+  margin: 0;
+  padding: 0;
+}
+
+.sideMenu li {
+  display: inline;
+  
+  /* Needed since IE fails when you give it list-style: none; */  
+  list-style-image: url(foo.gif);
+  /*font: 400 1.3em "trebuchet ms", serif;*/
+}
+
+
+.sideMenu li a {
+  display: block;
+  margin: 0.2em 0;
+  padding: 3px 5px;
+  text-decoration: none;
+  color: #65EBFF;
+
+}
+
+.sideMenu li a:hover {
+  color: #CEFEFF;
+  background: #5F5F5F;
+
+}
+
+/* Active menu item */
+.sideMenu li.here {
+  display: block;
+  padding: 5px;
+  color: #65EBFF;
+  background: #555;
+}
+
+.sideMenu li label  {
+  font: 400 1.3em "verdana", serif;
+}
+
+/* Submenu of active menu item */
+.sideMenu li.here ul {
+  margin: 0;
+  padding: 0;
+}
+
+.sideMenu li.here ul li a {
+  padding-left: 35px;
+  font: 400 1.0em verdana, arial, sans-serif;
+  color: #65EBFF;
+  background: url(../images/bg/bullet.gif) no-repeat 10px 0px;
+
+}
+
+.sideMenu li.here ul li a:hover {
+  color: #CEFEFF;
+  background: #5F5F5F url(../images/bg/bullet.gif) no-repeat 10px 0px;
+}
+
+
+
+/**************************************************************
+   #page: Holds the main page content.
+ **************************************************************/
+
+#page {
+  float: left;
+  width: 100%;
+  clear: both;
+  margin-top: 10px;
+  padding-bottom: 4em;
+  color: #FFF;
+}
+
+
+
+
+/**************************************************************
+   #footer: The page footer - will stick to the bottom if not
+            enough content.
+ **************************************************************/
+
+#footer {
+  float: left;
+  width: 100%;
+  clear: both;
+  
+  margin-top: -3.8em;
+  background: #000 url(../images/bg/footer.jpg) repeat-x top left;
+}
+
+/* Sets the width of the footer content */
+#footer #width {
+  position: relative;
+  z-index: 3;
+  font-size: 0.85em;
+  padding-top: 27px;
+}
+
+
+
+/**************************************************************
+   Width classes used by the site columns
+ **************************************************************/
+
+.width100 {
+  width: 100%;
+}
+
+.width75 {
+  width: 740px;
+}
+
+.width50 {
+  width: 49.7%;
+}
+
+.width33 {
+  width: 32.7%;
+}
+
+.width25 {
+  width: 240px;
+}
+
+
+
+/**************************************************************
+   Alignment classes
+ **************************************************************/
+
+.floatLeft {
+  float: left;
+}
+
+.floatRight {
+  float: right;
+}
+
+.alignLeft {
+  text-align: left;
+}
+
+.alignRight {
+  text-align: right;
+}
+
+
+
+/**************************************************************
+   Generic display classes
+ **************************************************************/
+
+.clear {
+  clear: both;
+}
+
+.block {
+  display: block;
+}
+
+.small {
+  font-size: 0.8em;
+}
+
+.green {
+  color: #A1FF45;
+}
+
+.red {
+  color: #EA1B00;
+}
+
+.grey {
+  color: #666;
+}
+
+.grey a {
+  color: #999;
+}
+
+.grey a:hover {
+  color: #EEE;
+}
+
+.gradient {
+  margin-bottom: 2em;
+  background: #555 url(../images/bg/gradient.jpg) repeat-x bottom left; 
+}
+
+.box {
+  margin-bottom: 8px;
+  background: #555 url(../images/bg/box.jpg) repeat-x top left; 
+  padding-left: 16px;
+  font-weight: bold;
+}
+
+.question {
+  font: 400 1.3em "verdana", serif;
+  color: #F8D766;
+}
+
+
+
+/************************************************************
+   Page Classes
+************************************************************/
+.page {
+  font: 400 1.3em "verdana", serif;
+  color: #FFF;
+  padding-left: 15px;
+  text-align: justify;
+  line-height: 20pt;
+}
+
+/************************************************************
+    List Classes
+************************************************************/
+.smallinput input[type="text"] {
+  width: 400px;
+}
+  
+/************************************************************
+    Horistonal scroll hack
+************************************************************/
+#minwidth {
+  height: 1px;
+  background: transparent;
+  width: 1000px;
+  min-width: 1000px;
+}
